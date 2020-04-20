@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>DistanceToEarth__c</fullName>
+        <externalId>false</externalId>
+        <label>DistanceToEarth</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Galaxy__c</fullName>
+        <externalId>false</externalId>
+        <label>Galaxy</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Milky Way</fullName>
+                    <default>false</default>
+                    <label>Milky Way</label>
+                </value>
+                <value>
+                    <fullName>Eye of Sauron</fullName>
+                    <default>false</default>
+                    <label>Eye of Sauron</label>
+                </value>
+                <value>
+                    <fullName>Andromeda Galaxy</fullName>
+                    <default>false</default>
+                    <label>Andromeda Galaxy</label>
+                </value>
+                <value>
+                    <fullName>Cigar Galaxy</fullName>
+                    <default>false</default>
+                    <label>Cigar Galaxy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <recordTypes>
+        <fullName>Gas_Gient</fullName>
+        <active>true</active>
+        <label>Gas Gient</label>
+        <picklistValues>
+            <picklist>Galaxy__c</picklist>
+            <values>
+                <fullName>Andromeda Galaxy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cigar Galaxy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Telestrial_Planet</fullName>
+        <active>true</active>
+        <label>Telestrial Planet</label>
+        <picklistValues>
+            <picklist>Galaxy__c</picklist>
+            <values>
+                <fullName>Eye of Sauron</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Milky Way</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>
