@@ -155,6 +155,18 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>DistanceToEarth__c</fullName>
+        <externalId>false</externalId>
+        <label>DistanceToEarth</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>DistanceToSun__c</fullName>
         <externalId>false</externalId>
         <label>DistanceToSun</label>
